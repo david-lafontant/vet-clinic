@@ -77,7 +77,7 @@ GROUP BY neutered;
 SELECT species, MIN(weight_kg) as min_weight, MAX(weight_kg) as max_weight FROM animals
 GROUP BY species;
 
-SELECT species, AVG(escape_attempted) as avergage_escape_attempted FROM animals
+SELECT species, AVG(escape_attempts) as avergage_escape_attempted FROM animals
 WHERE EXTRACT(YEAR FROM date_of_birth) BETWEEN 1990 AND 2000
 GROUP BY species;
 
