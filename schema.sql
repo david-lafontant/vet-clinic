@@ -8,3 +8,5 @@ escape_attempts INTEGER,
 neutered BOOLEAN,
 weight_kg REAL);
 
+ALTER TABLE animals
+ADD COLUMN species varchar(100);
