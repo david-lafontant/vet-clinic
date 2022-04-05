@@ -1,7 +1,6 @@
-# curriculum-databases-projects-template
+# Vet Clinic Database
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+> Database of the veterinary clinic Vet Clinic 
 
 
 ## Getting Started
@@ -10,22 +9,30 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 - Use [schema.sql](./schema.sql) to create all tables.
 - Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+- Check [queries.sql](./queries.sql)  that contains the querries
 
+
+## How to use this repository
+
+If not installed instal [Git](https://git-scm.com/download/win), and [PostgreSQL](https://www.postgresql.org/download/)
+
+ - Clone this repository by typing `git clone https://github.com/david-lafontant/vet-clinic.git`
+ - Go to the cloned repository by typing `cd vet_clinic`
+ - Open the `.sql' files by using your favorite editor
+ - Use PostgreSQL user interface (pgAdmin) or command line to run in the following order:
+  1 - schemas.sql
+  2 - data.sql
+  3 - data.sql
 
 ## Authors
 
-👤 **Author1**
+👤 **David Lafontant**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@david-lafontant](https://github.com/david-lafontant)
+- Twitter: [@manikatex](https://twitter.com/manikatex)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/david-lafontant/)
 
-👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -40,8 +47,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
