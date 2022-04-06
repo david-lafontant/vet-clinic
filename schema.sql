@@ -16,3 +16,28 @@ ALTER TABLE animals
 ADD COLUMN species varchar(100);
 
 -- Project 3
+
+ALTER TABLE animals 
+DROP COLUMN species;
+
+CREATE TABLE owners (
+  id SERIAL PRIMARY KEY, 
+  name varchar(100) NOT NULL, 
+  age INTEGER
+);
+
+CREATE TABLE species (
+  id SERIAL PRIMARY KEY, 
+  name varchar(100) NOT NULL
+);
+
+
+ALTER TABLE animals 
+ADD COLUMN species_id INTEGER, 
+ADD COLUMN owner_id INTEGER;
+
+ALTER TABLE animals 
+ADD CONSTRAINT fk_owner FOREIGN KEY (owner_id) REFERENCES owners(id);
+
+ALTER TABLE animals 
+ADD CONSTRAINT fk_species FOREIGN KEY (species_id) REFERENCES species(id);
