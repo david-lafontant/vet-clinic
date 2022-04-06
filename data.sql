@@ -1,4 +1,5 @@
 /* Populate database with sample data. */
+-- Project 1
 INSERT INTO animals (
   name, date_of_birth, escape_attempts, 
   neutered, weight_kg
@@ -18,6 +19,7 @@ VALUES
     'Devimon', '2017-05-12', 5, TRUE, 11
   );
 
+-- Project 2
 INSERT INTO animals (
     name, date_of_birth, escape_attempts, neutered, weight_kg
 ) 
@@ -41,3 +43,5 @@ VALUES
     'Blossom', '1998-10-13', 3, TRUE, 17
   ), 
   ('Ditto', '2022-05-14', 4, TRUE, 22);
+
+  -- Project 3

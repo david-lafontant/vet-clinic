@@ -81,4 +81,4 @@ SELECT species, AVG(escape_attempts) as avergage_escape_attempted FROM animals
 WHERE EXTRACT(YEAR FROM date_of_birth) BETWEEN 1990 AND 2000
 GROUP BY species;
 
-
+-- Project 3
