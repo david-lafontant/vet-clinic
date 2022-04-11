@@ -64,3 +64,10 @@ CREATE TABLE visits (
   CONSTRAINT vets_key FOREIGN KEY (vets_id) REFERENCES vets(id)
 );
 
+-- Performance Database (Project)
+
+CREATE INDEX visits_animals_index ON visits(animals_id);
+
+CREATE INDEX visits_vets_index ON visits(vets_id desc);
+
+CREATE INDEX owners_email_index ON owners(email);
