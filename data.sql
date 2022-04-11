@@ -102,3 +102,17 @@ VALUES
   (9, 2, '2020-08-03'),
   (10, 3, '2020-05-24'),
   (10, 1, '2021-01-11');
+
+-- Performance Database (Project)
+
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+INSERT INTO visits (animal_id, vets_id, date_of_visit) SELECT * FROM (SELECT id FROM animals) animal_ids, (SELECT id FROM vets) vets_ids, generate_series('1980-01-01'::timestamp, '2021-01-01', '4 hours') visit_timestamp;
+
+INSERT INTO owners (name, email) select 'Owner ' || generate_series(1,2500000), 'owner_' || generate_series(1,2500000) || '@mail.com';
+
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits WHERE animals_id = 4;
+
+EXPLAIN ANALYZE SELECT * FROM visits WHERE vets_id = 2;
+
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
