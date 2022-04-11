@@ -3,6 +3,13 @@
 > Database of the veterinary clinic Vet Clinic 
 
 
+
+| Before optimization  | Optimization  | After optimization   |
+|---|---|---|
+| ![image](screenshot/Screenshot_01.png)  |`CREATE INDEX visits_animals_index ON visits(animals_id);`   | ![image](screenshot/Screenshot_02.png)  |
+| ![image](screenshot/Screenshot_03.png)  | `CREATE INDEX visits_vets_index ON visits(vets_id desc);` | ![image](screenshot/Screenshot_04.png)  |
+| ![image](screenshot/Screenshot_05.png)  | `CREATE INDEX owners_email_index ON owners(email);`  | ![image](screenshot/Screenshot_06.png)  |
+
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
