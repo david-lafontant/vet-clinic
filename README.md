@@ -1,6 +1,8 @@
 # Vet Clinic Database
 
 > Database of the veterinary clinic Vet Clinic - In the upcoming projects, we use a relational database to create the data structure for a vet clinic. we start with one table, and step by step, we create a complete database with data about: [animals, animal's owners, clinic employees, visits] 
+![WhatsApp Image 2022-04-12 at 21 07 49](https://user-images.githubusercontent.com/63915024/163006534-78673535-5d12-4103-95d6-7f78faaddf3c.jpeg)
+
 
 
 | Before optimization  | Optimization  | After optimization   |
